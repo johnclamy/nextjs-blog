@@ -1,16 +1,200 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/**********************
+ * Design inspired by: OmTemplates Dreamster
+ * Design and developed by: John C Lamy
+ * Start date: April, 2020
+ * https://github.com/johnclamy/
+ * https://stackoverflow.com/users/5756347/john-lamy
+ **********************/
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600&family=Cinzel&display=swap');
+
+
+:root {
+
+  /******** App Colours ********/
+  --app-white:        #FFFFFF;
+  --app-light-gray:   #E9EAED;
+  --app-gray:         #C2C2C2;
+  --app-metal-gray:   #565673;
+  --app-mid-dark-gray:#666666;
+  --app-dark-gray:    #333333;
+  --app-red-light:    #E74C3C;
+  --app-red:          #C0392B;
+  --app-yellow-light: #F1C40F;
+  --app-yellow:       #F39C12;
+  --app-orange-light: #E67E22;
+  --app-orange:       #D35400;
+  --app-aqua-light:   #1ABC9C;
+  --app-aqua:         #16A085;
+  --app-purple-light: #9B59B6;
+  --app-purple:       #8E44AD;
+  --app-light-blue:   rgba(17, 153, 231, 0.685);
+  --app-blue:         #021479;
+
+  /**** Background Colours *****/
+  --primary-background:   var(--app-light-gray);
+  --secondary-background: var(--app-white);
+  --third-background:     var(--app-gray);
+  --forth-background:     var(--app-blue);
+  --inverse-background:   var(--app-dark-gray);
+
+  /******* Text Colours ********/
+  --primary-text: var(--app-metal-gray);
+  --light-text:   var(--app-gray);
+  --loud-text:    var(--app-dark-gray);
+  --inverse-text: var(--app-white);
+  --heading-text: var(--app-light-blue);
+
+  /******* Links Colours *******/
+  --primary-link-colour:       var(--app-blue);
+  --primary-link-colour-hover: var(--app-light-blue);
+  --secondary-link-colour:       var(--app-gray);
+  --secondary-link-colour-hover: var(--app-light-gray);
+
+  /********* Borders **********/
+  --primary-border-colour:   var(--app-light-gray);
+  --secondary-border-colour: var(--app-light-blue);
+  --third-border-colour:     var(--app-white);
+  --border-focus:            var(--app-gray);
+  --border-size:             1px;
+  --border-type:             solid;
+
+  /****** Font Weights *******/
+  --font-weight-light:  300;
+  --font-weight-normal: 400;
+  --font-weight-bold:   600;
+
+  /******* Typography ********/
+  --base-font:        'Catamaran', Arial, Helvetica, sans-serif;
+  --heading-font:     'Cinzel', 'Times New Roman', Times, serif;
+  --base-font-size:   16px;
+  --base-font-weight: var(--font-weight-normal);
+  --font-size:        1rem;
+  --base-line-height: 1.5;
+
+  /********* Layout **********/
+  --margin:  1rem;
+  --padding: 1rem;
+  --height:  100vh;
 }
 
-a {
-  color: inherit;
+/********* Base rules *********/
+
+html,
+body {
+  box-sizing:  border-box;
+  font-size:   var(--base-font-size);
+  font-family: var(--base-font);
+  height:      var(--height);
+}
+
+body {
+  background:  var(--primary-background);
+  color:       var(--primary-text);
+  font-family: var(--base-font);
+  font-size:   var(--base-font-size);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--font-weight-normal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+}
+
+h1 {
+  font-size: calc(var(--font-size) * 1.75);
+}
+
+h2 {
+  font-size: calc(var(--font-size) * 1.45);
+}
+
+h3 {
+  font-size: calc(var(--font-size) * 1.25);
+}
+
+h4 {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: calc(var(--font-size) * 1.1);
+}
+
+a,
+a:link,
+a:visited {
+  color: var(--primary-link-colour);
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+  color: var(--primary-link-colour-hover);
+  text-decoration: none;
+}
+
+hr {
+  width: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.not-allowed {
+  pointer-events: auto !important;
+  cursor: not-allowed !important;
+}
+
+.required-field {
+  color: var(--app-red-light);
+  font-weight: var(--font-weight-bold);
+}
+
+
+/************ Media queries ************/
+
+@media screen and (max-width: 940px) {
+  .footer-nav-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .social-icons-container {
+    display: none;
+  }
 }
