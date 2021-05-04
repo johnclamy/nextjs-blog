@@ -26,6 +26,7 @@
 }
 
 .icon svg {
-  width: 19px;
-  height: 19px;
+  width: 26px;
+  height: 26px;
+  padding-top: calc(var(--padding) * 0.5);
 }
