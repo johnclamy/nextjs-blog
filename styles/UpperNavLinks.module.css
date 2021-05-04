@@ -9,19 +9,26 @@
   padding: 0;
 }
 
-link {
-  text-transform: capitalize;
+.link:not(:last-child) {
+  margin-right: var(--margin);
 }
 
-a,
-a:link,
-a:visited {
+.link {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  font-size: calc(var(--font-size) * 0.85);
+  letter-spacing: 1px;
+  transition: all 0.6s ease-out;
+}
+
+.link:link,
+.link:visited {
   color: var(--app-mid-dark-gray);
   text-decoration: none;
-  transition: 0.3s;
 }
 
-link a:hover {
+.link:hover,
+.link:active {
   color: var(--app-aqua-light);
   text-decoration: none;
 }
