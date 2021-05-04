@@ -1,0 +1,27 @@
+.container {
+  background-color: var(--primary-background);
+  border: none;
+}
+
+.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+link {
+  text-transform: capitalize;
+}
+
+a,
+a:link,
+a:visited {
+  color: var(--app-mid-dark-gray);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+link a:hover {
+  color: var(--app-aqua-light);
+  text-decoration: none;
+}
