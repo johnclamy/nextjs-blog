@@ -29,6 +29,6 @@
 
 .link:hover,
 .link:active {
-  color: var(--app-aqua-light);
+  color: #4E9D8E;
   text-decoration: none;
 }
