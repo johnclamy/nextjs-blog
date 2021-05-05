@@ -1,0 +1,48 @@
+.input {
+  height: 80%;
+  background: var(--secondary-background);
+  border: none;
+  color: var(--loud-text);
+  font-size: calc(var(--font-size) * 1.1);
+  padding: var(--padding) var(--padding) var(--padding) cacl(var(--padding) * 2);
+}
+
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+  background: var(--secondary-background);
+}
+
+.button {
+  border: none;
+  outline: none;
+  color: var(--loud-text);
+  background-color: white;
+  padding-top: var(--padding);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  outline: none;
+  background: var(--secondary-background);
+}
+
+.button svg {
+  width: 20px;
+  height: 20px;
+  color: var(--app-mid-dark-gray);
+}
+/*
+.active-searchbox {
+  border: 1px solid var(--gray);
+  width: 180px;
+  transition: width 0.5s ease-in;
+}
+
+.not-active-searchbox {
+  border: 0;
+  width: 0px;
+  transition: width 0.3s ease-out;
+}*/
