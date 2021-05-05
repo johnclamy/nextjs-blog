@@ -9,7 +9,7 @@ export default function Searchbar () {
   const focusSearchInput = () => searchInput.current.focus()
   const searchStyle = isActive ? {
     border: '1px solid #C2C2C2',
-    width: '180px',
+    width: '250px',
     transition: 'width 0.5s ease-in'
   } : {
     border: '0',
@@ -32,7 +32,7 @@ export default function Searchbar () {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <input
         type='text'
         ref={searchInput}
@@ -43,7 +43,7 @@ export default function Searchbar () {
         style={searchStyle}
       />
       <button
-        className={button}
+        className={styles.button}
         onClick={() => setIsActive(!isActive)} type='submit'
       >
         <FaSearch title='Search' />

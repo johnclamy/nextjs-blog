@@ -1,4 +1,4 @@
 .container {
-  padding: calc(var(--padding) * 4) 0;
+  padding-top: calc(var(--padding) * 3);
   background-color: white;
 }

@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: white;
+  padding-bottom: var(--padding);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: calc(var(--margin) * 1.5);
+  padding: calc(var(--padding) * 0.7) var(--padding) 0 var(--padding);
+}

@@ -1,15 +1,20 @@
+.form {
+  display: flex;
+  align-items: center;
+}
+
 .input {
-  height: 80%;
   background: var(--secondary-background);
   border: none;
   color: var(--loud-text);
   font-size: calc(var(--font-size) * 1.1);
-  padding: var(--padding) var(--padding) var(--padding) cacl(var(--padding) * 2);
+  padding: calc(var(--padding) * 0.55) var(--padding);
+  margin-right: calc(var(--margin) * 0.5);
 }
 
-input:hover,
-input:focus,
-input:active {
+.input:hover,
+.input:focus,
+.input:active {
   outline: none;
   background: var(--secondary-background);
 }
@@ -30,8 +35,8 @@ input:active {
 }
 
 .button svg {
-  width: 20px;
-  height: 20px;
+  width: 27px;
+  height: 27px;
   color: var(--app-mid-dark-gray);
 }
 /*

@@ -5,9 +5,9 @@ export default function MainNavLinks() {
   return (
     <nav className={styles.container}>
       <ul className={styles.links}>
-        <Link href='/posts'><a className={styles.link}>posts</a></Link>
-        <Link href='/films'><a className={styles.link}>films</a></Link>
-        <Link href='/people'><a className={styles.link}>people</a></Link>
+        <Link href='/posts'><a className={styles.link}>Posts</a></Link>
+        <Link href='/films'><a className={styles.link}>Films</a></Link>
+        <Link href='/people'><a className={styles.link}>People</a></Link>
       </ul>
     </nav>
   )
