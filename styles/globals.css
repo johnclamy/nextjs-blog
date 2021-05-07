@@ -1,20 +1,23 @@
-/**********************
+/********************************************************
  * Design inspired by: OmTemplates Dreamster
  * Design and developed by: John C Lamy
  * Start date: April, 2020
  * https://github.com/johnclamy/
  * https://stackoverflow.com/users/5756347/john-lamy
- **********************/
+ ********************************************************/
 
 
-/* Google Fonts */
+/**************** Google Fonts **************************/
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600&family=Cinzel&display=swap');
+
+/********* ensure all pages have Bootstrap CSS *********/
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 
 :root {
 
   /******** App Colours ********/
-  --app-white:        #FFFFF0;
+  --app-white:        #FFFFFF;
   --app-light-gray:   #E9EAED;
   --app-gray:         #C2C2C2;
   --app-metal-gray:   #565673;
@@ -84,10 +87,7 @@
 
 html,
 body {
-  box-sizing:  border-box;
-  font-size:   var(--base-font-size);
-  font-family: var(--base-font);
-  height:      var(--height);
+  height: var(--height);
 }
 
 body {
@@ -97,33 +97,9 @@ body {
   font-size:   var(--base-font-size);
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: var(--font-weight-normal);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-weight: var(--font-weight-bold);
 }
 
@@ -142,11 +118,6 @@ h3 {
 h4 {
   font-size: var(--font-size);
   font-weight: var(--font-weight-normal);
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 p {
@@ -184,8 +155,7 @@ img {
   font-weight: var(--font-weight-bold);
 }
 
-
-/************ Media queries ************/
+/*********** Media queries **************/
 
 @media screen and (max-width: 940px) {
   .footer-nav-item {
