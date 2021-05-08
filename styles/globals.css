@@ -162,9 +162,3 @@ img {
     display: none;
   }
 }
-
-@media screen and (max-width: 680px) {
-  .social-icons-container {
-    display: none;
-  }
-}

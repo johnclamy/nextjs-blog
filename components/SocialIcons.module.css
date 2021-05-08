@@ -1,4 +1,14 @@
+.social_icons_container {
+  padding-right: 0;
+}
+
 .social_icon svg {
   width: 19px;
   height: 19px;
+}
+
+@media screen and (max-width: 680px) {
+  .social_icons_container {
+    display: none;
+  }
 }

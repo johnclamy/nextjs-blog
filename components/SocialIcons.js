@@ -15,7 +15,7 @@ export const YOUTUBE = 'https://www.youtube.com/channel/UC4x2dKiILZWI2JVGS6y1hQA
 
 export default function SocialIcons() {
   return (
-    <Navbar className='pr-0 social-icons-container'>
+    <Navbar className={styles.social_icons_container}>
       <Nav>
         <Nav.Link className={styles.social_icon} href={FACEBOOK}>
           <FaFacebook title='Facebook' />
