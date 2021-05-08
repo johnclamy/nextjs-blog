@@ -20,13 +20,13 @@ export default function SocialIcons() {
         <Nav.Link className={styles.social_icon} href={FACEBOOK}>
           <FaFacebook title='Facebook' />
         </Nav.Link>
-        <Nav.Link className={styles.social_icon} href={SOCIAL.IMDB}>
+        <Nav.Link className={styles.social_icon} href={IMDB}>
           <FaImdb title='Internet Movie Database' />
         </Nav.Link>
-        <Nav.Link className={styles.social_icon} href={SOCIAL.LINKED_IN}>
+        <Nav.Link className={styles.social_icon} href={LINKED_IN}>
           <FaLinkedin title='LinkedIn' />
         </Nav.Link>
-        <Nav.Link className={styles.social_icon} href={SOCIAL.YOUTUBE}>
+        <Nav.Link className={styles.social_icon} href={YOUTUBE}>
           <FaYoutube title='YouTube' />
         </Nav.Link>
       </Nav>
