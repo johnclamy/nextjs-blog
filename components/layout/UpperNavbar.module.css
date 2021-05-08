@@ -1,11 +1,21 @@
-.app_navbar_top {
+.nav_link {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-.app_navbar_top a:link {
+.nav_link:link,
+.nav_link:visited {
+  color: var(--app-mid-dark-gray);
   border-bottom: none;
   font-size: calc(var(--font-size) * 0.85);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.06rem;
+}
+
+.nav_link:hover {
+  color: var(--app-dark-gray);
+}
+
+.nav_link:not(:last-child) {
+  margin-right: var(--margin);
 }
