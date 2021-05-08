@@ -6,8 +6,8 @@ import styles from './UpperNavbar.module.css'
 
 export default function UpperNavbar() {
   return (
-    <Navbar>
-      <Nav className="text-uppercase mr-auto">
+    <Navbar className={styles.nav_navbar}>
+      <Nav>
         <Link href='/'>
           <a className={styles.nav_link}>home</a>
         </Link>

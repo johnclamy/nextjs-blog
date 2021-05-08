@@ -1,6 +1,12 @@
+.nav_navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav_link {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  text-transform: uppercase;
 }
 
 .nav_link:link,
@@ -18,4 +24,11 @@
 
 .nav_link:not(:last-child) {
   margin-right: var(--margin);
+}
+
+@media screen and (max-width: 680px) {
+  .nav_navbar {
+    display: flex;
+    justify-content: center;
+  }
 }
