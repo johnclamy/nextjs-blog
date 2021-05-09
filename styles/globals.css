@@ -155,15 +155,9 @@ img {
   font-weight: var(--font-weight-bold);
 }
 
-/*********** Media queries **************/
-
-@media screen and (max-width: 940px) {
-  .footer-nav-item {
-    display: none;
-  }
-}
 
 /************* Hero Section *************/
+
 .hero-main-item,
 .hero-aside-item {
   max-width: 100%;
@@ -257,5 +251,44 @@ img {
 
   .hero-aside-item {
     border-bottom: var(--border-size) var(--border-type) var(--app-white);
+  }
+}
+
+
+/*********** Footer Section **************/
+
+footer.app-footer {
+  text-align: center;
+  margin: calc(var(--margin) * 4) 0 var(--margin) 0;
+}
+
+footer.app-footer header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: calc(var(--margin) * 2);
+  padding: calc(var(--padding) * 2);
+  background-color: var(--inverse-background);
+}
+
+footer.app-footer p {
+  color: var(--loud-text);
+  font-size: calc(var(--font-size) * 3/4);
+  font-weight: var(--font-weight-light);
+}
+
+.footer-nav-link:not(:last-child) {
+  margin-right: calc(var(--margin) * 1.5);
+}
+
+.footer-social-icons {
+  background-color: var(--secondary-background);
+  border-radius: 0 30px;
+  padding-right: 12px;
+}
+
+@media screen and (max-width: 940px) {
+  .footer-nav-item {
+    display: none;
   }
 }
