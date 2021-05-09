@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import UpperNavbar from './UpperNavbar'
 import Header from './Header'
+import Footer from './Footer'
 
 export default function Layout({ children }) {
   return (
@@ -12,6 +13,11 @@ export default function Layout({ children }) {
         </Col>
       </Row>
       {children}
+      <Row>
+        <Col md={{ span: 10, offset: 1 }}>
+          <Footer />
+        </Col>
+      </Row>
     </Container>
   )
 }
