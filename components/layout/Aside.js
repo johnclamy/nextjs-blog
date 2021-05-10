@@ -1,9 +1,10 @@
+import AboutSummary from '../AboutSummary'
+
 export default function Aside() {
   return (
     <div>
-      components go here...
-      {/* AboutSummary
-          Showreel
+      <AboutSummary />
+      {/*    Showreel
           SocialIconsSummary
           FilmListAside */}
     </div>
