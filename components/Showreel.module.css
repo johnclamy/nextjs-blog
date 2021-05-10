@@ -1,0 +1,25 @@
+.show_reel_card {
+  margin-top: var(--margin);
+}
+
+.show_reel_card_title {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-light);
+  padding: calc(var(--padding) * 0.4) 0 var(--padding) 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.show_reel_card_link {
+  position: relative;
+  padding-top: 56.25%;
+  line-height: var(--base-line-height) * 0.78;
+  text-align: center;
+  font-size: calc(var(--font-size) * 0.98);
+}
+
+.showreel_player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
