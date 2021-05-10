@@ -292,3 +292,105 @@ footer.app-footer p {
     display: none;
   }
 }
+
+
+/*************** Page layouts *****************/
+
+.app_page_header {
+  margin-top: calc(var(--margin) * 2.5);
+}
+
+.app_page_post {
+  margin: calc(var(--margin) * 2) 0;
+}
+
+.app_pages_about_intro {
+  padding: cals(var(--padding) * 2) 0;
+}
+
+.app_pages_about h2 {
+  text-transform: capitalize;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.11rem;
+  margin-bottom: calc(var(--margin) * 1.3);
+}
+
+.app_pages_about_intro p {
+  font-size: calc(var(--font-size) * 1.3);
+}
+
+.app_pages_about_jemsea_wrapper {
+  margin: calc(var(--margin) * 1.5) 0;
+  background-color: var(--secondary-background);
+  padding: calc(var(--padding) * 2);
+}
+
+.app_pages_about_jemsea {
+  background-color: var(--forth-background);
+  padding: calc(var(--padding) * 1.5);
+  border-radius: 5px;
+  color: var(--inverse-text);
+}
+
+.app_pages_about_jemsea > p {
+  font-size: calc(var(--font-size) * 1.35);
+  font-style: italic;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.04rem;
+  padding: 0 var(--padding);
+  line-height: calc(var(--base-line-height) * 1.2);
+  font-weight: var(--font-weight-light);
+}
+
+.app_pages_about_jemsea a,
+.app_pages_about_jemsea a:link,
+.app_pages_about_jemsea a:visited {
+  color: var(--secondary-link-colour);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+
+.app_pages_about_jemsea a:hover {
+  color: var(--secondary-link-colour-hover);
+  text-decoration: none;
+}
+
+.app_pages_about_footer {
+  margin-top: calc(var(--margin) * 1.5);
+  background-color: var(--secondary-background);
+  padding: calc(var(--padding) * 2) var(--padding);
+}
+
+.app_pages_about_footer_main_img {
+  margin-bottom: calc(var(--margin) * 2.5);
+}
+
+.app_page_notfound {
+  margin-top: var(--margin);
+  padding: calc(var(padding) * 3.5) var(--padding);
+  text-align: center;
+  background-color: var(--secondary-background);
+}
+
+.app_page_notfound header h1 {
+  margin: calc(var(--margin) * 1.5) 0 calc(var(--margin) * 3.5) 0;
+  color: var(--app-blue);
+  font-size: calc(var(--font-size) * 3.3);
+  font-weight: var(--font-weight-light);
+}
+
+.app_page_notfound p {
+  font-size: calc(var(--font-size) * 1.8);
+  text-align: center;
+  line-height: calc(var(--base-line-height) * 1.5);
+  margin-top: calc(var(--margin) * 4);
+}
+
+.app_page_notfound footer {
+  margin-top: calc(var(--margin) * 5);
+}
+
+.app_page_notfound footer .app_page_notfound_btn {
+  font-size: calc(var(--font-size) * 1.4);
+  text-transform: uppercase;
+}
