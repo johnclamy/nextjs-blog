@@ -15,7 +15,7 @@ export default function Contact() {
     <Row>
       <Col md={{ span: 10, offset: 1 }}>
         <Content>
-          <section className='bg-white mt-3 py-4 px-3'>
+          <section className='contact-page-container'>
             <Row>
               <Col>
                 <HeaderPage>contact me</HeaderPage>
@@ -25,7 +25,9 @@ export default function Contact() {
               <Col md={12} lg={4}>
                 <section classsName='contact-page-links-item'>
                   <a className='text-white' href={LINKED_IN}>
-                    <div className='text-center'><FaLinkedin /></div>
+                    <div className='mb-2 text-center'>
+                      <FaLinkedin style={{width: '60px', height: '60px'}} />
+                    </div>
                     <h1 className='h3 text-center'>LinkedIn</h1>
                     <p className='lead text-center'>Official contact page</p>
                   </a>
@@ -33,7 +35,9 @@ export default function Contact() {
               </Col>
               <Col md={12} lg={4}>
                 <section classsName='contact-page-links-item'>
-                  <div className='text-center'><FaEnvelope /></div>
+                  <div className='mb-2 text-center'>
+                    <FaEnvelope style={{width: '60px', height: '60px'}} />
+                  </div>
                   <h1 className='h3 text-center'>Email</h1>
                   <p className='lead text-center'>tyronejstewart@yahoo.co.uk</p>
                 </section>
