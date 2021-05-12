@@ -394,3 +394,17 @@ footer.app-footer p {
   font-size: calc(var(--font-size) * 1.4);
   text-transform: uppercase;
 }
+
+.contact-page-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: calc(var(--margin) * 3) 0;
+  padding: calc(var(--padding) * 3) 0;
+  color: var(--inverse-text);
+  background-color: var(--forth-background);
+}
+
+.contact-page-links-item svg {
+  width: 45px;
+  height: 45px;
+}
