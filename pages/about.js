@@ -1,16 +1,15 @@
 import { Row, Col, Image } from 'react-bootstrap'
 import Link from 'next/link'
 
+import HeaderPage from '../components/layout/HeaderPage'
+
 export default function About () {
   return (
     <Row className='app_pages_about'>
       <Col md={{ span: 10, offset: 1 }}>
-        <header className='app_page_header'>
-          <h1 className='display-4'>
-            About Me
-          </h1>
-          <hr />
-        </header>
+        <div className='app_page_header'>
+          <HeaderPage>about me</HeaderPage>
+        </div>
         {/* Author introduction */}
         <Row className='app_pages_about_intro'>
           <Col xs={12} sm={12} md={6}>
