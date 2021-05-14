@@ -259,7 +259,7 @@ img {
 
 footer.app-footer {
   text-align: center;
-  margin: calc(var(--margin) * 4) 0 var(--margin) 0;
+  margin: calc(var(--margin) * 1.5) 0 var(--margin) 0;
 }
 
 footer.app-footer header {
