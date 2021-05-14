@@ -409,3 +409,22 @@ footer.app-footer p {
   color: var(--inverse-text);
   background-color: var(--forth-background);
 }
+
+.not-found-page {
+  color: var(--inverse-text);
+  text-align: center;
+  margin-top: var(--margin);
+  padding: calc(var(--padding) * 8) calc(var(--padding) * 2);
+}
+
+@media screen and (min-width: 800px) {
+  .not-found-page {
+    padding: calc(var(--padding) * 8) calc(var(--padding) * 6);
+  }
+}
+
+@media screen and (min-width: 1022px) {
+  .not-found-page {
+    padding: calc(var(--padding) * 8) calc(var(--padding) * 12);
+  }
+}
