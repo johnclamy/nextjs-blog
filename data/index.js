@@ -315,7 +315,7 @@ const content = {
       topic: 'Cast and Crew',
       author: 'Tyrone J Stewart',
       createdAt: 'Sat Aug 3 2013 23:01:00',
-      imgHeader: 'images/posts/_1.jpg',
+      imgHeader: '/images/posts/_1.jpg',
       text: `When I thought about what to write on this site, nothing at first came to mind. Why would people be interested in what I have to say? I'm just me, doing what I find interesting and enjoyable. But it occurred to me that there are lots of other folks out there just like me. So if I can be at all insightful or helpful about my fim-making endeavours, and any other related escapades, then that's what I'll use it for. So feel free to drop me a comment if you like or just enjoy the films on the site. Until the next one my best.`
     },
     {
@@ -324,7 +324,7 @@ const content = {
       topic: 'Behind the Scenes',
       author: 'Tyrone J Stewart',
       createdAt: 'Sun Sep 29 2013 19:22:00',
-      imgHeader: 'images/posts/_2.jpg',
+      imgHeader: '/images/posts/_2.jpg',
       text: `Making short films is what we are about. Here is a clip that gives you, our esteemed viewer, an idea of how much fun we have in making short films. The crew are having a relaxed moment testing out the costume for Stalker actor Graeme Benson. This second Stalker short was slightly more challenging than the first film due to gory scenes involved. However, we can assure our viewers that no one got hurt in the making of this film. If anything, it was great fun! We all enjoyed it and had a blast. Making films in our spare time can be nerve racking but when creative people come together to make Jemsea Films, they show dedication, commitment and passion. That's what makes the our productions run smoothly and on time.`
     },
     {
@@ -333,7 +333,7 @@ const content = {
       topic: 'Announcement',
       author: 'Tyrone J Stewart',
       createdAt: 'Sun Oct 13 2013 19:23:33',
-      imgHeader: 'images/posts/_3.jpg',
+      imgHeader: '/images/posts/_3.jpg',
       text: `Just to let everybody know that we are planning on adding a new home for Jemsea Films on YouTube. This will be the main Jemsea Channel for all current and future short films. When we get round to releasing our feature films, they too will be housed on this new channel. The idea behind the new channel is to correlate all films into one specific area and give our viewers another outlet for viewing our films. This way we hope to make the viewing of Jemsea films a more social event. Another factor was the discovery of our films. YouTube makes it easier for viewers to search and find independent short films like ours. We will keep you posted on these developments. Stay tuned :)`
     },
     {
@@ -342,7 +342,7 @@ const content = {
       topic: 'Film-making',
       author: 'Tyrone J Stewart',
       createdAt: 'Wed Nov 20 2013 22:18:00',
-      imgHeader: 'images/posts/_4.jpg',
+      imgHeader: '/images/posts/_4.jpg',
       text: `When i was making the first Stalker it dawned on me that I would like to do more of these things. Having the right people around you, a story that flows well and with good planning it is possible to do them for very little money. It can be a lot harder than you think but once you get going the momentum and your determination will get it done. It may not turn out like you thought but with a good editor and a great music score no one will know the pain & frustration you went through in making it. The tricky bit is putting all the bits together some scenes will work others won't, things you didn't expect to work do. It will drive you crazy. In a good way (but not always). Hopefully in the end you will have a film you can show the world. Also feed your cast and crew well. That way when you ask them to do it again they might just say yes.`
     },
     {
@@ -351,7 +351,7 @@ const content = {
       topic: 'Announcement',
       author: 'Tyrone J Stewart',
       createdAt: 'Sun Dec 01 2013 00:52:00',
-      imgHeader: 'images/posts/_5.jpg',
+      imgHeader: '/images/posts/_5.jpg',
       text: `We made this film in about 4 hours on the day. In the corse of gearing up to film the short 'God for a Day' we were denied our location filming in Hampstead Heath park. So Darren Fripp came up with the idea to make something with cast and crew standing about. He had written a short story a while back and thought it could be done quickly. We went to a coffee shop near the park and rehearsed it for about an hour, getting the words flowing and what emotions needed to be brought up. With a few slight directions Keith Eyles and Melissa De Mol (credited here as Melissa Anne George), I was encouraged to make it. As we were doing this Darren and the crew were finding a location to film, he found a good place up the road came and got us and we went off to film it. It was an enjoyable day and we had fun doing it. After we celebrated in a pub across from the park. It became a nice evenings drinking. Over the next few weekends Alex Brunning the editor and I put it together then I got Simon Herring to do a nice little musical score and it was finished. It was then entered in to the short film corner at Cannes Film Festival 2010. Had a few more screening over the years. For an off the cuff idea I think it turned out well, has a heavy subject matter but sometimes a little drama is good for the soul and shows the human condition. Don't judge. Understand.`
     }
   ]
