@@ -3,6 +3,7 @@ import Col from 'react-bootstrap/Col'
 
 import Hero from '../components/layout/Hero'
 import Content from '../components/layout/Content'
+import PostList from '../components/PostList'
 
 export default function Home() {                                                                                                                 
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <Col md={{ span: 10, offset: 1 }}>
         <Hero />
         <Content>
-          posts go here ...
+          <PostList />
         </Content>
       </Col>
     </Row>
