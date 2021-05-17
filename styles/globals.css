@@ -428,3 +428,80 @@ footer.app-footer p {
     padding: calc(var(--padding) * 8) calc(var(--padding) * 12);
   }
 }
+
+
+/******************* home page posts *********************/
+
+.app_post_card {
+  margin-top: var(--margin);
+}
+
+.app_post_card_body {
+  padding-top: calc(var(--padding) * 0.5) !important;
+}
+
+.app_post_card_topic {
+  font-size: calc(var(--font-size) * 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  text-align: center;
+}
+
+.app_post_card_title {
+  font-size: calc(var(--font-size) * 2) !important;
+  font-weight: var(--font-weight-bold) !important;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 0 !important;
+}
+
+.app_post_card_subtitle {
+  font-size: calc(var(--font-size) * 0.8) !important;
+  font-weight: var(--font-weight-light) !important;
+  font-style: oblique;
+  text-transform: capitalize;
+  word-spacing: 0.04rem;
+  letter-spacing: 0.06rem;
+  text-align: center;
+}
+
+.app_post_card_subtitle_prefix {
+  text-transform: lowercase;
+  color: var(--heading-text);
+}
+
+.app_post_card_subtitle_postfix {
+  text-transform: lowercase;
+  color: var(--app-gray);
+}
+
+.app_post_card_text {
+  padding: calc(var(--padding) * 1.2) 0 !important;
+}
+
+.app_post_card_btn {
+  color: var(--primary-text);
+  width: 25%;
+  border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
+  background: transparent;
+  border-radius: 50px;
+  border: none;
+  padding: calc(var(--padding) * 0.8) calc(var(--padding) * 1.2);
+  text-align: center;
+  font-size: var(--font-size);
+  margin-bottom: var(--margin);
+  transition-duration: 0.8s;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.app_post_card_submit {
+  background: var(--primary-background);
+  color: var(--loud-text);
+}
+
+.app_post_card_submit:hover {
+  background-color: var(--forth-background);
+  color: var(--app-white);
+}
