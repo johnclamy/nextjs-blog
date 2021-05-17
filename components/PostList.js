@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import PostCard from './PostCard'
 import data from '../data/'
 
-export default function PostList () {
+export default function PostList() {
   const [ posts, setPosts ] = useState([])
   const postList = (
     <ListGroup>

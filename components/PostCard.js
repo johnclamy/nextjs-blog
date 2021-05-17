@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card'
 // import Link from 'next/link'
 import moment from 'moment'
 
-export default function PostCard ({ post }) {
+export default function PostCard({ post }) {
 
   return (
     <Card className='app_post_card'>
