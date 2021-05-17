@@ -505,3 +505,15 @@ footer.app-footer p {
   background-color: var(--forth-background);
   color: var(--app-white);
 }
+
+
+/******************** film page ********************/
+
+.app_film_card {
+  width: 100%;
+  margin-top: var(--margin);
+}
+
+.app_film_card_img {
+  height: calc(var(--height) - 30);
+}
