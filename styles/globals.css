@@ -517,3 +517,38 @@ footer.app-footer p {
 .app_film_card_img {
   height: calc(var(--height) - 30);
 }
+
+
+/******************** people component ********************/
+
+.app-people-card-item {
+  margin-bottom: calc(var(--margin) * 3/4);
+}
+
+.app-people-card-img {
+  width: 180px;
+  height: 250px;
+  margin-right: var(--margin);
+}
+
+.app-people-card-name {
+  font-size: calc(var(--font-size) * 2.3);
+  font-weight: var(--font-weight-bold);
+  color: var(--heading-text);
+}
+
+.app-people-card-name a,
+.app-people-card-name a:link,
+.app-people-card-name a:visited,
+.app-people-card-name a:hover {
+  color: var(--heading-text);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.app-people-card-role {
+  font-size: calc(var(--font-size) * 1.2);
+  font-weight: var(--font-weight-light);
+  color: var(--light-text);
+  text-transform: lowercase;
+}
