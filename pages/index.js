@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       <Col md={{ span: 10, offset: 1 }}>
         <Hero />
         <Content>
-          <PostList />
+          <PostList posts={posts} />
         </Content>
       </Col>
     </Row>
