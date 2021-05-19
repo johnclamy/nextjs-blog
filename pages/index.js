@@ -6,7 +6,7 @@ import Hero from '../components/layout/Hero'
 import Content from '../components/layout/Content'
 import PostList from '../components/PostList'
 
-export async function getStaticProps() {}
+// export async function getStaticProps() {}
 
 export default function Home() {                                                                                                                 
   return (
