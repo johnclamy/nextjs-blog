@@ -1,3 +1,4 @@
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Card from 'react-bootstrap/Card'
 import Link from 'next/link'
 import moment from 'moment'
@@ -13,7 +14,9 @@ export default function PostCard({ post }) {
           <span className='app_post_card_subtitle_prefix'>posted on</span> {moment(post.createdAt).format('LL')}
           <span className='app_post_card_subtitle_postfix'> by</span> {post.author}
         </Card.Subtitle>
-        <Card.Text className='app_post_card_text'>{subPostString(post.message)}...</Card.Text>
+        <Card.Text className='app_post_card_text'>
+          {documentToReactComponents(post.message)}
+        </Card.Text>
       </Card.Body>
       <div className='text-center'>
         <Link href={`/posts/${post.slug}`} passHref>
