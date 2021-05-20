@@ -23,6 +23,10 @@ export default function Contact() {
             </Row>
             <Row className='contact-page-links'>
               <Col md={12} lg={4}>
+                <header>
+                  <h2>available for hire</h2>
+                  <p>editing and post production. Contact me on:</p>
+                </header>
                 <section classsName='contact-page-links-item'>
                   <a className='text-white' href={LINKED_IN}>
                     <div className='mb-2 text-center'>
