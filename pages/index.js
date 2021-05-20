@@ -15,8 +15,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ posts }) {
-  console.log(posts)                                                                                                             
+export default function Home({ posts }) {                                                                                                            
   return (
     <Row>
       <Col md={{ span: 10, offset: 1 }}>

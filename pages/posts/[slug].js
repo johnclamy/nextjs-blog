@@ -1,3 +1,6 @@
+import { Row, Col } from 'react-bootstrap'
+
+import PostCardDetails from '../../components/PostCardDetails'
 import client from '../api/contentful'
 
 export const getStaticPaths = async () => {
@@ -25,9 +28,12 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default function PostDetails({ post }) {
-  console.log('details page', post)
+export default function PostSlug({ post }) {
   return (
-    <div>details page...</div>
+    <Row>
+      <Col md={{ span: 10, offset: 1 }}>
+        <PostCardDetails post={post.fields} />
+      </Col>
+    </Row>
   )
 }
