@@ -401,15 +401,6 @@ footer.app-footer p {
   padding: calc(var(--padding) * 2) var(--padding);
 }
 
-.contact-page-links {
-  display: flex;
-  justify-content: space-evenly;
-  margin: calc(var(--margin) * 3) 0;
-  padding: calc(var(--padding) * 5) 0;
-  color: var(--inverse-text);
-  background-color: var(--forth-background);
-}
-
 .not-found-page {
   color: var(--inverse-text);
   text-align: center;
