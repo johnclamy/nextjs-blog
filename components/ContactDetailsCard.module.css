@@ -1,0 +1,29 @@
+.container {
+  margin: calc(var(--margin) * 3) 0;
+  padding: calc(var(--padding) * 5) 0;
+  color: var(--inverse-text);
+  background-color: var(--forth-background);
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.badge {
+  color: var(--app-blue);
+  background-color: var(--secondary-background);
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: calc(var(--margin) * 3) 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
