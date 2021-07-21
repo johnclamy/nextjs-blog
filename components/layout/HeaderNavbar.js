@@ -17,7 +17,10 @@ export default function NavbarHeader() {
 
           <Link href='/people'>
             <a title='Cast and Crew'>people</a>
-          </Link>        
+          </Link> 
+          <Link href='/work'>
+            <a title='Cast and Crew'>work</a>
+          </Link>       
         </Nav>
     </Navbar>
   )
