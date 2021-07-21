@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { Row, Col, Badge, Button } from 'react-bootstrap'
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
 
@@ -5,6 +6,7 @@ import { LINKED_IN } from '../components/SocialIcons'
 import styles from './ContactDetailsCard.module.css'
 
 export default function ContactDetailsCard() {
+  const router = useRouter()
   return (
     <div className={styles.container}>
       <Row>
@@ -45,8 +47,10 @@ export default function ContactDetailsCard() {
         <Col className={styles.button}>
           <Button block
             size='lg'
+            type='button'
             variant='warning'
             className='text-capitalize font-weight-bold'
+            onClick={() => router.push('/work')}
           >
             recent work page
           </Button>
