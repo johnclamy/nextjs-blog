@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col'
 
 import Hero from '../components/layout/Hero'
 import Content from '../components/layout/Content'
-import PostList from '../components/PostList'
+import PostListShort from '../components/PostListShort'
 import client from './api/contentful'
 
 export async function getStaticProps() {
@@ -21,7 +21,7 @@ export default function Home({ posts }) {
       <Col md={{ span: 10, offset: 1 }}>
         <Hero />
         <Content>
-          <PostList posts={posts} />
+          <PostListShort posts={posts} />
         </Content>
       </Col>
     </Row>
