@@ -1,13 +1,17 @@
-import { Row, Col } from 'react-bootstrap'
+import React from 'react'
 
+import { Row, Col } from 'react-bootstrap'
 import PostCardDetails from '../../components/PostCardDetails'
 import client from '../api/contentful'
 
-export const getStaticPaths = async () => {
-  const res = await client.getEntries({ content_type: 'post' })
-  const paths = res.items.map(item => {
+export async function getStaticPaths() {
+  const rslt = await client.getEntries({
+    content_type: 'post'
+  })
+
+  const paths = rslt.items.map(i => {
     return {
-      params: { slug: item.fields.slug }
+      params: { slug: i.fields.slug }
     }
   })
 
@@ -20,7 +24,7 @@ export const getStaticPaths = async () => {
 export async function getStaticProps({ params }) {
   const { items } = await client.getEntries({
     content_type: 'post',
-    'fields.slug': params.slug
+    'fields.slug': params.slug,
   })
 
   return {
@@ -28,11 +32,12 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default function PostSlug({ post }) {
+export default function ({ post }) {
+  console.log(post)
   return (
     <Row>
       <Col md={{ span: 10, offset: 1 }}>
-        <PostCardDetails post={post.fields} />
+        <PostCardDetails post={post} />
       </Col>
     </Row>
   )
