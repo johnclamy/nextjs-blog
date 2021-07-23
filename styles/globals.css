@@ -543,3 +543,11 @@ footer.app-footer p {
   color: var(--light-text);
   text-transform: lowercase;
 }
+
+
+/******************** work component ********************/
+.app_pages_work_container {
+  background-color: var(--secondary-background);
+  margin: calc(var(--padding) * 1.5) 0;
+  padding: calc(var(--padding) * 1.2);
+}
