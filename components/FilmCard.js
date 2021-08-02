@@ -29,9 +29,9 @@ export default function FilmCard({ film }) {
           <Card.Footer>
             <Card.Text className='text-center'>{film.runtime}</Card.Text>
             <Button
-              block
+              size='lg'
               variant='dark'
-              className='text-capitalize'>
+              className='text-capitalize w-100'>
               show more
             </Button>
           </Card.Footer>
