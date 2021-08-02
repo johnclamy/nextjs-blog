@@ -22,7 +22,7 @@ export default function FilmCard({ film }) {
           src={poster}
         />
         <Card.Body>
-          <Alert className='d-flex justify-content-sm-between' variant='info'>
+          <Alert className='d-flex justify-content-sm-between bg-primary'>
             <Badge pill variant='secondary'>{film.year}</Badge>
             <Badge pill className='text-capitalize' variant='warning'>{film.genre}</Badge>
           </Alert>
