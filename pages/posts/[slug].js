@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { Row, Col } from 'react-bootstrap'
+
 import PostCardDetails from '../../components/PostCardDetails'
 import client from '../api/contentful'
 
@@ -33,7 +33,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function ({ post }) {
-  console.log(post)
   return (
     <Row>
       <Col md={{ span: 10, offset: 1 }}>
