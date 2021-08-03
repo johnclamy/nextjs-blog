@@ -1,16 +1,10 @@
-import { useEffect, useState } from 'react'
 import Row from 'react-bootstrap/Row'
-
 import FilmCard from './FilmCard'
-import data from '../data'
 
-export default function FilmList() {
-  const [ films, setFilms ] = useState([])
+export default function FilmList({ films }) {
   const filmList = films.map(film =>
-    <FilmCard key={film.id} film={film} />  
+    <FilmCard key={film.sys.id} film={film.fields} />  
   )
-
-  useEffect(() => setFilms(data.films), [films])
 
   return <Row>{filmList}</Row>
 }

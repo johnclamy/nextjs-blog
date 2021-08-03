@@ -5,11 +5,13 @@ import {
   Alert,
   Button
  } from 'react-bootstrap'
+ import { useRouter } from 'next/router'
 
 export default function FilmCard({ film }) {
+  const router = useRouter()
   const poster = ( 
-    film.poster
-      ? film.poster
+    film.poster.fields.file.url
+      ? film.poster.fields.file.url
       : 'https://via.placeholder.com/300x600.png'
   )
 
@@ -23,7 +25,7 @@ export default function FilmCard({ film }) {
         />
         <Card.Body>
           <Alert className='d-flex justify-content-sm-between bg-primary'>
-            <Badge pill variant='secondary'>{film.year}</Badge>
+            <Badge pill variant='secondary'>{film.yearOfProduction}</Badge>
             <Badge pill className='text-capitalize' variant='warning'>{film.genre}</Badge>
           </Alert>
           <Card.Footer>
@@ -31,7 +33,9 @@ export default function FilmCard({ film }) {
             <Button
               size='lg'
               variant='dark'
-              className='text-capitalize w-100'>
+              className='text-capitalize w-100'
+              onClick={() => router.push(`/films/${film.youTubeId}`)}
+            >
               show more
             </Button>
           </Card.Footer>
