@@ -1,5 +1,5 @@
 import { Row, Col } from 'react-bootstrap'
-import FilmList from '../components/FilmList'
+import FilmList from '../../components/FilmList'
 
 export default function Films() {
   return (
