@@ -1,0 +1,20 @@
+.app_film_card_details {
+  margin-top: var(--margin);
+  padding: calc(var(--padding) * 2.5) 0;  
+  min-height: 300px;
+  background-color: var(--inverse-background);
+}
+
+.app_film_card_details_title {
+  font-size: calc(var(--font-size) * 1.6) !important;
+}
+
+.app_film_card_details_subtitle {
+  color: var(--light-text);
+  font-style: italic;
+}
+
+.app_filmcard_details_text {
+  font-size: calc(var(--font-size) * 1.2);
+  margin-top: calc(var(--padding) * 1.5);
+}

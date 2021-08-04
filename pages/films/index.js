@@ -12,7 +12,6 @@ export async function getStaticProps() {
 }
 
 export default function Films({ films }) {
-  console.log(films)
   return (
     <Row>
       <Col md={{ span: 10, offset: 1 }}>
