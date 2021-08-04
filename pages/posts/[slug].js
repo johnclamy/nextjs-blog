@@ -32,7 +32,7 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default function ({ post }) {
+export default function PostDetailsPage({ post }) {
   return (
     <Row>
       <Col md={{ span: 10, offset: 1 }}>

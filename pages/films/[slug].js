@@ -29,12 +29,13 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default function ({ film }) {
+export default function FilmDetailsPage({ film }) {
   console.log(film)
   return (
     <Row>
       <Col md={{ span: 10, offset: 1 }}>
-        <h3>Film details goes here...</h3>
+        {/* <FilmDetailsCard film={film.fields} /> */}
+        <h2>Film details card goes here...</h2>
       </Col>
     </Row>
   )
