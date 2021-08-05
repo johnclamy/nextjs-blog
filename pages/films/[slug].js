@@ -34,8 +34,7 @@ export default function FilmDetailsPage({ film }) {
   return (
     <Row>
       <Col md={{ span: 10, offset: 1 }}>
-        {/* <FilmDetailsCard film={film.fields} /> */}
-        <h2>Film details card goes here...</h2>
+        <FilmDetailsCard film={film.fields} />
       </Col>
     </Row>
   )
