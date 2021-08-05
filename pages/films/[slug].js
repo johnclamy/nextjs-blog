@@ -8,7 +8,7 @@ export const getStaticPaths = async () => {
   const rslt = await client.getEntries({ content_type: 'film' })
   const paths = rslt.items.map(item => {
     return {
-      params: { slug: item.fields.youTubeId }
+      params: { slug: item.fields.slug }
     }
   })
 
@@ -21,7 +21,7 @@ export const getStaticPaths = async () => {
 export async function getStaticProps({ params }) {
   const { items } = await client.getEntries({
     content_type: 'film',
-    'fields.youTubeId': params.slug
+    'fields.slug': params.slug
   })
 
   return {

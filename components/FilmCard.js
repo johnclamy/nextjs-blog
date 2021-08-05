@@ -34,7 +34,7 @@ export default function FilmCard({ film }) {
               size='lg'
               variant='dark'
               className='text-capitalize w-100'
-              onClick={() => router.push(`/films/${film.youTubeId}`)}
+              onClick={() => router.push(`/films/${film.slug}`)}
             >
               show more
             </Button>

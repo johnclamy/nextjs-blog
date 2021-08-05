@@ -4,10 +4,10 @@ import FilmList from '../../components/FilmList'
 import client from '../api/contentful'
 
 export async function getStaticProps() {
-  const res = await client.getEntries({ content_type: 'film' })
+  const rslt = await client.getEntries({ content_type: 'film' })
 
   return {
-    props: { films: res.items }
+    props: { films: rslt.items }
   }
 }
 
