@@ -11,25 +11,27 @@ export default function FilmDetailsCard({ film }) {
   const filmDetails =
     film
       ? (
-        <Container className={styles.app_film_card_details}>
-          <Row>
-            <Col xs={12} sm={5} className='bg-white'>
-              <Card>
-                <Card.Body>
-                  <Card.Title className={styles.app_film_card_details_title}>
-                    {film.title} &nbsp;
-                    <small>{film.runtime}</small>
-                  </Card.Title>
-                  <Card.Subtitle className={styles.app_film_card_details_subtitle}>{film.genre} / {film.year}</Card.Subtitle>{/* 
-                  <Card.Text className={styles.app_filmcard_details_text}>
-                    {documentToReactComponents(film.synopsis.content)}
-                  </Card.Text>*/}
-                </Card.Body>
-              </Card>
-            </Col>{/* 
-            <Col xs={12} sm={7}>
-              // asset check - Red Rose film is not on YouTube
-              {film.youTubeId !== film.title.toLowerCase().replaceAll(' ', '-')
+        <Container className={styles.container}>
+          <Row style={{ minHeight: '350px'}}>
+            <Col xs={12} sm={5} md={6}>
+              <div className='p-1'>
+                <Card style={{ minHeight: '350px'}}>
+                  <Card.Body>
+                    <Card.Title className='text-center mb-0'>
+                      <span className={styles.title}>{film.title}</span> &nbsp;
+                      <small>{film.runtime}</small>
+                    </Card.Title>
+                    <Card.Subtitle className={styles.subtitle}>
+                      {film.genre} / {film.yearOfProduction}
+                    </Card.Subtitle>
+                    <Card.Text className='mt-3'>{documentToReactComponents(film.synopsis)}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </div>              
+            </Col>
+            <Col xs={12} sm={7} md={6}>
+              {/* asset check - Red Rose film is not on YouTube */}
+              {film.slug !== film.youTubeId
                 ? (<ReactPlayer height='100%' width='100%' url={`${YOUTUBE_URL}${film.youTubeId}`} />)
                 : (
                   <div className='d-flex justify-content-center align-content-center'>
@@ -39,7 +41,7 @@ export default function FilmDetailsCard({ film }) {
                   </div>
                 )
               }
-            </Col>*/}
+            </Col>
           </Row>
         </Container>
       )
