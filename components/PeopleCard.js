@@ -1,4 +1,4 @@
-import { Card, Media, Image, ListGroup } from 'react-bootstrap'
+import { Card, Image, ListGroup } from 'react-bootstrap'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 export default function PeopleCard({ person }) {
