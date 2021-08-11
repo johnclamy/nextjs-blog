@@ -6,7 +6,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 const YOUTUBE_URL = 'https://www.youtube.com/watch?v='
 
 export default function WorkCard({ workItem }) {
-  console.log(workItem)
   return (
     <Row>
       <Col md={6}>
