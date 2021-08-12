@@ -4,8 +4,11 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import moment from 'moment'
 
+import PostCardButtom from './PostCardButton'
+
 export default function PostCard({ post }) {
   const router = useRouter()
+  const handleClick = () => router.push(`/posts/${post.slug}`)
 
   return (
     <Card className='app_post_card'>
@@ -24,12 +27,7 @@ export default function PostCard({ post }) {
         </Card.Text>
       </Card.Body>
       <div className='text-center'>
-        <button
-          className='app_post_card_btn app_post_card_submit'
-          onClick={() => router.push(`/posts/${post.slug}`)}
-        >
-          full screen
-        </button>
+        <PostCardButtom onClick={handleClick}>full screen</PostCardButtom>
       </div>
     </Card>
   )

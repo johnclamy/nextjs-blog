@@ -3,8 +3,12 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import moment from 'moment'
 
+import PostCardButtom from './PostCardButton'
+
 export default function PostCardShort({ post }) {
   const router = useRouter()
+  const handleClick = () => router.push(`/posts/${post.slug}`)
+
   return (
     <Card className='app_post_card'>
       <Card.Img variant='top' src={`https:${post.image.fields.file.url}`} alt={post.title} />
@@ -22,12 +26,7 @@ export default function PostCardShort({ post }) {
         </Card.Text>
       </Card.Body>
       <div className='text-center'>
-        <button 
-          className='app_post_card_btn app_post_card_submit'
-          onClick={() => router.push(`/posts/${post.slug}`)}
-        >
-          read more
-        </button>
+        <PostCardButtom onClick={handleClick}>read more</PostCardButtom>
       </div>
     </Card>
   )
