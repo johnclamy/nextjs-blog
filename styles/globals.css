@@ -201,6 +201,10 @@ img {
   background-color: rgb(17, 153, 231);
 }
 
+.post-shoutout {
+  display: none;
+}
+
 .hero-wrapper h2 span {
   color: var(--app-white);
   font-size: 1.25rem;
@@ -227,6 +231,7 @@ img {
   padding: 0.25rem;
 }
 
+/* 1/4 MEDIA QUERY TO CHANGE
 @media (min-width: 992px) {
   .hero {
     display: flex;
@@ -252,7 +257,7 @@ img {
   .hero-aside-item {
     border-bottom: var(--border-size) var(--border-type) var(--app-white);
   }
-}
+}*/
 
 
 /*********** Footer Section **************/
@@ -286,12 +291,12 @@ footer.app-footer p {
   border-radius: 0 30px;
   padding-right: 12px;
 }
-
+/*
 @media screen and (max-width: 940px) {
   .footer-nav-item {
     display: none;
   }
-}
+}*/
 
 
 /*************** Page layouts *****************/
@@ -407,7 +412,7 @@ footer.app-footer p {
   margin-top: var(--margin);
   padding: calc(var(--padding) * 8) calc(var(--padding) * 2);
 }
-
+/*
 @media screen and (min-width: 800px) {
   .not-found-page {
     padding: calc(var(--padding) * 8) calc(var(--padding) * 6);
@@ -419,7 +424,7 @@ footer.app-footer p {
     padding: calc(var(--padding) * 8) calc(var(--padding) * 12);
   }
 }
-
+*/
 
 /******************* home page posts *********************/
 
@@ -550,4 +555,74 @@ footer.app-footer p {
   background-color: var(--secondary-background);
   margin: calc(var(--padding) * 1.5) 0;
   padding: calc(var(--padding) * 1.2);
+}
+
+
+/************************************************
+ **************** Media Queries *****************
+ ************************************************/
+
+/* Desktops */
+@media (min-width: 1225px) {
+  .post-shoutout {
+    display: block;
+  }
+}
+
+/* Large tables */
+@media (min-width: 1025px) {
+  .hero {
+    display: flex;
+  }
+
+  .hero-main {
+    width: 70%;
+  }
+
+  .hero-aside {
+    width: 30%;
+    border-left: var(--border-size) var(--border-type) var(--app-white);
+  }
+
+  .hero-main {
+    display: flex;
+  }
+
+  .hero-main-item {
+    align-self: stretch;
+  }
+
+  .hero-aside-item {
+    border-bottom: var(--border-size) var(--border-type) var(--app-white);
+  }
+
+  .not-found-page {
+    padding: calc(var(--padding) * 8) calc(var(--padding) * 12);
+  }
+}
+
+/* Portrait mode for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-nav-item {
+    display: none;
+  }
+
+  .not-found-page {
+    padding: calc(var(--padding) * 8) calc(var(--padding) * 6);
+  }
+}
+
+/* Landscape mode for tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+/* Landscape for mobiles and phablets */
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* Smartphones */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
 }

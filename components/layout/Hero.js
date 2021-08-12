@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="hero-main hero-wrapper">
           <Image className="hero-main-item" src='/hero-main.jpg' fluid />
           <a href='/posts'><Button>Posts</Button></a>
-          <h2 className="h4"><span>Find out what we're up to...</span></h2>
+          <h2 className="h4 post-shoutout"><span>Find out what we're up to...</span></h2>
       </div>
       <div className="hero-aside">
         <div className='hero-wrapper'>
