@@ -475,29 +475,14 @@ footer.app-footer p {
   padding: calc(var(--padding) * 1.2) 0 !important;
 }
 
-.app_post_card_btn {
-  color: var(--primary-text);
-  width: 25%;
-  border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
-  background: transparent;
-  border-radius: 50px;
-  border: none;
-  padding: calc(var(--padding) * 0.8) calc(var(--padding) * 1.2);
-  text-align: center;
-  font-size: var(--font-size);
-  margin-bottom: var(--margin);
-  transition-duration: 0.8s;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-}
 
-.app_post_card_submit {
+
+.app-post-card-submit {
   background: var(--primary-background);
   color: var(--loud-text);
 }
 
-.app_post_card_submit:hover {
+.app-post-card-submit:hover {
   background-color: var(--forth-background);
   color: var(--app-white);
 }
@@ -567,6 +552,23 @@ footer.app-footer p {
   .post-shoutout {
     display: block;
   }
+
+  .app-post-card-btn {
+    color: var(--primary-text);
+    width: 25%;
+    border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
+    background: transparent;
+    border-radius: 50px;
+    border: none;
+    padding: calc(var(--padding) * 0.8) calc(var(--padding) * 1.2);
+    text-align: center;
+    font-size: var(--font-size);
+    margin-bottom: var(--margin);
+    transition-duration: 0.8s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }
 
 /* Large tables */
@@ -599,6 +601,52 @@ footer.app-footer p {
   .not-found-page {
     padding: calc(var(--padding) * 8) calc(var(--padding) * 12);
   }
+
+  .app-post-card-btn {
+    color: var(--primary-text);
+    width: 25%;
+    border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
+    background: transparent;
+    border-radius: 50px;
+    border: none;
+    padding: calc(var(--padding) * 0.8) calc(var(--padding) * 1.2);
+    text-align: center;
+    font-size: var(--font-size);
+    margin-bottom: var(--margin);
+    transition-duration: 0.8s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .app-post-card-submit {
+    font-size: calc(var(--font-size) * 0.8) !important;
+    font-weight: var(--font-weight-light) !important;
+    font-style: oblique;
+    text-transform: capitalize;
+    word-spacing: 0.04rem;
+    letter-spacing: 0.06rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app-post-card-btn {
+    color: var(--primary-text);
+    width: 30%;
+    border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
+    background: transparent;
+    border-radius: 50px;
+    border: none;
+    padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
+    text-align: center;
+    font-size: var(--font-size);
+    margin-bottom: var(--margin);
+    transition-duration: 0.8s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }
 
 /* Portrait mode for tablets */
@@ -610,19 +658,81 @@ footer.app-footer p {
   .not-found-page {
     padding: calc(var(--padding) * 8) calc(var(--padding) * 6);
   }
+
+  .app-post-card-btn {
+    color: var(--primary-text);
+    width: 30%;
+    border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
+    background: transparent;
+    border-radius: 50px;
+    border: none;
+    padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
+    text-align: center;
+    font-size: var(--font-size);
+    margin-bottom: var(--margin);
+    transition-duration: 0.8s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }
 
 /* Landscape mode for tablets */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+  .app-post-card-btn {
+    color: var(--primary-text);
+    width: 30%;
+    border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
+    background: transparent;
+    border-radius: 50px;
+    border: none;
+    padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
+    text-align: center;
+    font-size: var(--font-size);
+    margin-bottom: var(--margin);
+    transition-duration: 0.8s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }
 
 /* Landscape for mobiles and phablets */
 @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-  /* CSS */
+  .app-post-card-btn {
+    color: var(--primary-text);
+    width: 35%;
+    border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
+    background: transparent;
+    border-radius: 50px;
+    border: none;
+    padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
+    text-align: center;
+    font-size: var(--font-size);
+    margin-bottom: var(--margin);
+    transition-duration: 0.8s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }
 
 /* Smartphones */
 @media (min-width: 320px) and (max-width: 480px) {
-  /* CSS */
+  .app-post-card-btn {
+    color: var(--primary-text);
+    width: 40%;
+    border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
+    background: transparent;
+    border-radius: 50px;
+    /* border: none; */
+    padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
+    text-align: center;
+    font-size: var(--font-size);
+    margin-bottom: var(--margin);
+    transition-duration: 0.8s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }
