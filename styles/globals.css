@@ -559,7 +559,7 @@ footer.app-footer p {
     border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
     background: transparent;
     border-radius: 50px;
-    border: none;
+    /* border: none; */
     padding: calc(var(--padding) * 0.8) calc(var(--padding) * 1.2);
     text-align: center;
     font-size: var(--font-size);
@@ -608,7 +608,7 @@ footer.app-footer p {
     border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
     background: transparent;
     border-radius: 50px;
-    border: none;
+    /* border: none; */
     padding: calc(var(--padding) * 0.8) calc(var(--padding) * 1.2);
     text-align: center;
     font-size: var(--font-size);
@@ -637,7 +637,7 @@ footer.app-footer p {
     border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
     background: transparent;
     border-radius: 50px;
-    border: none;
+    /* border: none; */
     padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
     text-align: center;
     font-size: var(--font-size);
@@ -665,7 +665,7 @@ footer.app-footer p {
     border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
     background: transparent;
     border-radius: 50px;
-    border: none;
+    /* border: none; */
     padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
     text-align: center;
     font-size: var(--font-size);
@@ -685,7 +685,7 @@ footer.app-footer p {
     border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
     background: transparent;
     border-radius: 50px;
-    border: none;
+    /* border: none; */
     padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
     text-align: center;
     font-size: var(--font-size);
@@ -705,7 +705,7 @@ footer.app-footer p {
     border: calc(var(--border-size) * 2) var(--border-type) var(--secondary-border-colour);
     background: transparent;
     border-radius: 50px;
-    border: none;
+    /* border: none; */
     padding: calc(var(--padding) * 0.4) calc(var(--padding) * 0.6);
     text-align: center;
     font-size: var(--font-size);
