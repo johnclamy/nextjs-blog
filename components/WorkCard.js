@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card'
 import ReactPlayer from 'react-player'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
+import styles from './WorkCard.module.css'
+
 const YOUTUBE_URL = 'https://www.youtube.com/watch?v='
 
 export default function WorkCard({ workItem }) {
@@ -23,7 +25,7 @@ export default function WorkCard({ workItem }) {
       </Col>
       <Col md={6}>
         <div className='app_pages_work_container'>
-          <Card>
+          <Card className={styles.content_card}>
             <Card.Body>
               <Card.Title>{workItem.title}</Card.Title>
               {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
