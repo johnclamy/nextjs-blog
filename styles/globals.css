@@ -536,21 +536,9 @@ footer.app-footer p {
 
 
 /******************** work component ********************/
-.work-card-container {
-  height: 35%;
-  background-color: var(--secondary-background);
-  margin: calc(var(--padding) * 1.5) 0;
-  padding: calc(var(--padding) * 1.5);
-}
-
 .work-card {
-  height: 100%;
+  height: 400px;
 }
-
-.work-card-text {
-  overflow: scroll;
-}
-
 
 
 /************************************************
@@ -744,5 +732,9 @@ footer.app-footer p {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+  }
+
+  .work-card {
+    height: 300px;
   }
 }
