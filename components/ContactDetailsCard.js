@@ -23,7 +23,7 @@ export default function ContactDetailsCard() {
       </Row>
       <Row className={styles.links}>
         <Col md={12} lg={4}>
-          <section classsName='contact-page-links-item'>
+          <section className='contact-page-links-item'>
             <a className='text-white' href={LINKED_IN}>
               <div className='mb-2 text-center'>
                 <FaLinkedin style={{width: '60px', height: '60px'}} />
