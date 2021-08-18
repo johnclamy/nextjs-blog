@@ -536,11 +536,21 @@ footer.app-footer p {
 
 
 /******************** work component ********************/
-.app_pages_work_container {
+.work-card-container {
+  height: 35%;
   background-color: var(--secondary-background);
   margin: calc(var(--padding) * 1.5) 0;
-  padding: calc(var(--padding) * 1.2);
+  padding: calc(var(--padding) * 1.5);
 }
+
+.work-card {
+  height: 100%;
+}
+
+.work-card-text {
+  overflow: scroll;
+}
+
 
 
 /************************************************
