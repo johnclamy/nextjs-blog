@@ -1,5 +1,4 @@
-import { Col } from 'react-bootstrap'
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Col, Card } from 'react-bootstrap'
 import ReactPlayer from 'react-player'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
