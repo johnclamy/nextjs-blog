@@ -47,14 +47,4 @@ export default function PostDetailsPage({ post }) {
       </Col>
     </Row>
   )
-
-
-{/* 
-  return (
-    <Row>
-      <Col md={{ span: 10, offset: 1 }}>
-        <PostCardDetails post={post} />
-      </Col>
-    </Row>
-  )*/}
 }
