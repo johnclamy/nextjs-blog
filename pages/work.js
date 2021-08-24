@@ -8,7 +8,8 @@ export async function getStaticProps() {
   const rslt = await client.getEntries({ content_type: 'work' })
 
   return {
-    props: { work: rslt.items }
+    props: { work: rslt.items },
+    revalidate: 1,
   }
 }
 
