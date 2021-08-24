@@ -1,4 +1,4 @@
-import ListGroup from 'react-bootstrap/ListGroup'
+import { ListGroup } from 'react-bootstrap'
 import PostCard from './PostCard'
 
 export default function PostList({ posts }) {
