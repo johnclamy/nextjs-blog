@@ -25,7 +25,8 @@ export async function getStaticProps({ params }) {
   })
 
   return {
-    props: { film: items[0] }
+    props: { film: items[0] },
+    revalidate: 1,
   }
 }
 
