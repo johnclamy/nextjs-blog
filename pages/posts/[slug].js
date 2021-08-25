@@ -1,7 +1,8 @@
 import React from 'react'
-import { Row, Col, Spinner } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 
 import PostCardDetails from '../../components/PostCardDetails'
+import PostCardSkeleton from '../../components/PostCardSkeleton'
 import client from '../api/contentful'
 
 export async function getStaticPaths() {
@@ -34,11 +35,9 @@ export async function getStaticProps({ params }) {
 }
 
 export default function PostDetailsPage({ post }) {
-  const postItem = !post ? (
-    <Spinner animation='border' role='status' variant='info'>
-      <span className='visually-hidden'>Loading...</span>
-    </Spinner>
-  ) : <PostCardDetails post={post} />
+  const postItem = post
+    ? <PostCardDetails post={post} />
+    : <PostCardSkeleton /> 
 
   return (
     <Row>
