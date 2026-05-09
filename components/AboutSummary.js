@@ -13,7 +13,7 @@ export default function AboutSummary() {
           <Link href='/about'><a>Tyrone</a></Link> has 15+ years of experience as a film production assistant 
           having worked on a part time basis in different capacities on short films, corporate videos,
           television ads and media related projects for Markettiers4dc, Spear Media, Quintessentially 
-          Lifestyle, Keen City Productions, Barclays Bank, BEN TV UK and has also worked independently 
+          Lifestyle, Keen City Productions, BEN TV UK and has also worked independently 
           by creating his own <Link href='/films'><a>short films</a></Link> from pre-production through to post production.
         </Card.Text>
       </Card.Body>
