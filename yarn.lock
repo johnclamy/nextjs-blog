@@ -234,9 +234,9 @@ dom-helpers@^5.0.1, dom-helpers@^5.1.2, dom-helpers@^5.2.0:
     csstype "^3.0.2"
 
 fast-copy@^2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.1.7.tgz#affc9475cb4b555fb488572b2a44231d0c9fa39e"
-  integrity sha512-ozrGwyuCTAy7YgFCua8rmqmytECYk/JYAMXcswOcm0qvGoE3tPb7ivBeIHTOK2DiapBhDZgacIhzhQIKU5TCfA==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.2.0.tgz#702ffefa69c44415010b94a950b8297e1e4623df"
+  integrity sha512-+T1bBiRiRGn7aKFqD0FEebYEzYgqK/uOlKCy2stsAgqSRI4T7nxmoTd1i8XmaGXp9B47yYXvx+V65yoz3DFAUw==
 
 follow-redirects@^1.15.0:
   version "1.15.6"
